@@ -14,9 +14,9 @@
 </head>
 <body>
   <h1 class="center">Are you ready...</h1>
-  <h4 class="center">...for an adventure?</h4>
+  <h4 class="center hide" id="subtitle">...for an adventure?</h4>
   <hr>
-  <form>
+  <form id ="nmform">
     <div class="std-margin">
       <label for="cname">What is your name? </label>
       <input type="text" name="name" id="cname">
@@ -25,16 +25,16 @@
       <button id="nbtn">It begins...</button>
     </div>
   </form>
-  <div id="char-stats">
-    <p id="char-name">
-
-    </p>
-    <p id="race">
-
-    </p>
-    <p id="job">
-
-    </p>
+  <form id="raceform" class="hide">
+    <p class="std-margin">Please tell us who your people are.</p>
+    <button class="std-margin" id="human">Human</button>
+    <button class="std-margin" id="halfl">Halfling</button>
+    <button class="std-margin" id="dwarf">Dwarf</button>
+    <button class="std-margin" id="elf">Elf</button>
+    <button class="std-margin" id="gnome">Gnome</button>
+  </form>
+  <div class="std-margin" id="charID">
+    <p id="idLine"></p>
   </div>
 </body>
 </html>
